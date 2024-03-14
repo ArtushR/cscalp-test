@@ -1,0 +1,21 @@
+.container {
+  margin: 20px auto;
+  width: 80%;
+}
+
+.add-price {
+  margin-bottom: 20px;
+}
+
+.add-price input {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.add-price button {
+  padding: 5px 10px;
+}
+
+.min-max-prices p {
+  margin: 5px 0;
+}

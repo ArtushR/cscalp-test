@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="add-price">
+    <h2>Новая цена:</h2>
+    <input type="number" [(ngModel)]="newPrice" placeholder="Enter price">
+    <button (click)="addPrice()">Добавить</button>
+  </div>
+  <div class="min-max-prices">
+    <h2>Минимальна цена по интервалам:</h2>
+    <div *ngFor="let minPrice of minPrices">
+      <p>{{ minPrice.interval }} - {{ minPrice.value }}</p>
+    </div>
+    <br>
+    <h2>Максимальная цена по интервалам:</h2>
+    <div *ngFor="let maxPrice of maxPrices">
+      <p>{{ maxPrice.interval }} - {{ maxPrice.value }}</p>
+    </div>
+  </div>
+</div>
